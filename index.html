@@ -1,7 +1,100 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+<head>
+  <title>AWS Amplify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mark Ramrattan">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<div uk-sticky="" class="uk-navbar-container tm-navbar-container uk-sticky">
+  <div class="uk-container">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left"><a href="" class="uk-navbar-item uk-logo">
+          AWS Amplify Resources</a></div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m ">
+        
+          <a class="uk-button uk-button-default " target="_blank" href="https://docs.amplify.aws/">Docs</a>
+          <button class="uk-button uk-button-default" type="button" uk-toggle="target: #table-usage">Videos</button>
+          <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">News</button>
+        
+        </ul>
+      
+        <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle=""
+          class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"></a>
+      </div>
+
+    </nav>
+  </div>
+</div>
+
+<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar">
+    <a class="twitter-timeline" href="https://twitter.com/AWSAmplify?ref_src=twsrc%5Etfw">Tweets by AWS Amplify</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+<div id="offcanvas" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+
+    <ul class="uk-nav uk-nav-default">
+
+      <li class="uk-nav-header">AWS Amplify</li>
+      <li class="uk-nav-divider"></li>
+      <li><a target="_blank" href="https://docs.amplify.aws/"><span class="uk-margin-small-right"
+            uk-icon="icon: settings"></span> Docs</a></li>
+
+      <li><a href="#" uk-toggle="target: #table-usage"><span class="uk-margin-small-right" uk-icon="icon: list"></span>
+          Videos</a></li>
+          <li><a href="#" uk-toggle="target: #offcanvas-flip"><span class="uk-margin-small-right"
+            uk-toggle="target: #offcanvas-flip" uk-icon="icon: bell"></span> News</a></li>
+      <li class="uk-nav-divider"></li>
+      <li><a href="https://twitter.com/markramrattan" target="_blank"><span class="uk-margin-small-right"
+            uk-icon="icon: question"></span>Support</a></li>
+
+    </ul>
+
+  </div>
+</div>
+<div id="table-usage" class="uk-container uk-cover-container" >
+
+
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLihp0nPtXXMn6BpHt_awSBXslr5qMrTAM" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+
+</div>
+
+<div class="uk-section-small uk-section-muted uk-container">
+  <p class="uk-text-meta">Mrs Miyagi</p>
+  <span>
+
+    <script language="Javascript">
+      var myDate = new Date(document.lastModified);
+      myNewDate = new Intl.DateTimeFormat(
+        "en-GB", {
+          year: "numeric",
+          month: "numeric",
+          day: "numeric"
+        }
+      ).format(myDate).replace(/\./g, '-');
+
+      document.write("Version 1.0 | " + myNewDate + "");
+    </script>
+
+
+  <span class="uk-align-right">
+    <a href="https://twitter.com/markramrattan" uk-icon="twitter" target="_blank"></a>
+  </span>
+</div>
+</div>
+
+
 </html>
